@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD con JavaScript Local Storage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <secton class="crud">
+      <h1 class="crud__title">Crud de Usuarios</h1>
+      <form id="formRegister" class="crud__form">
+        <input type="text" placeholder="nombre" id="nameInput" class="form__input">
+        <input type="email" placeholder="email" id="emailInput" class="form__input">
+        <button type="submit" id="submitButton" class="button button--primary">Agregar</button>
+      </form>
+      <table class="crud__table">
+        <th>
+          <tr>
+            <th class="table__header">Nombre</th>
+            <th class="table__header">Email</th>
+            <th class="table__header">Accion</th>
+          </tr>
+        </th>
+        <tbody id="tableBody" class="table__body">
+
+        </tbody>
+      </table>
+    </secton>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
